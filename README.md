@@ -1,4 +1,4 @@
-# vue-alert
+# vue-project
 
 ## Project setup
 ```
