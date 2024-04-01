@@ -1,0 +1,23 @@
+{
+  "name": "vue-alert",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "core-js": "^3.8.3",
+    "sweetalert2": "^11.10.7",
+    "vue": "^3.2.13",
+    "vue-router": "^4.3.0",
+    "vue-sweetalert2": "^5.0.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  }
+}
