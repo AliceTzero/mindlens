@@ -3,7 +3,7 @@
         <table id="tbl-modal-warning" class="tbl-modal">
             <tr>
                 <td valign="top">
-                    <fa icon="fa-solid fa-triangle-exclamation" id="icon-header" style="color:#dc5a00;" />
+                    <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" id="icon-header" style="color:#dc5a00;" />
                 </td>
 
                 <td class="row-content" valign="top">
@@ -18,7 +18,7 @@
                     </div>
                 </td>
                 <td valign="top">
-                    <fa icon="fa-solid fa-x" id="icon-close" style="color: #566271;" />
+                    <FontAwesomeIcon icon="fa-solid fa-x" id="icon-close" style="color: #566271;" />
                 </td>
             </tr>
         </table>
@@ -27,9 +27,11 @@
 
 <script>
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 export default {
     name: 'WarningModal',
-
+    components: {FontAwesomeIcon}
 }
 </script>
 

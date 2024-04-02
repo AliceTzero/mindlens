@@ -3,7 +3,7 @@ src/components/ErrorModal.vue<template>
         <table id="tbl-modal-success" class="tbl-modal">
             <tr>
                 <td valign="top">
-                    <fa icon="fa-solid fa-circle-check" id="icon-header" style="color: #008700;" />
+                    <FontAwesomeIcon icon="fa-solid fa-circle-check" id="icon-header" style="color: #008700;" />
                 </td>
 
                 <td class="row-content" valign="top">
@@ -18,7 +18,7 @@ src/components/ErrorModal.vue<template>
                     </div>
                 </td>
                 <td valign="top">
-                    <fa icon="fa-solid fa-x" id="icon-close" style="color: #566271;" />
+                    <FontAwesomeIcon icon="fa-solid fa-x" id="icon-close" style="color: #566271;" />
                 </td>
             </tr>
         </table>
@@ -27,9 +27,11 @@ src/components/ErrorModal.vue<template>
 
 <script>
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 export default {
     name: 'SuccessModal',
-
+    components: {FontAwesomeIcon}
 }
 </script>
 
