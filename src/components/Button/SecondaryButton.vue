@@ -3,12 +3,12 @@
         <div id="div-secondary">
         <button class="btn-text-icon" @click="isClicked($event)">
             
-            <fa icon="angle-left" style="padding-right: 8px;"/> Action
+            <FontAwesomeIcon icon="angle-left" style="padding-right: 8px;"/> Action
         </button>
 
         <button class="btn-text-icon" @click="isClicked($event)">
          Action
-            <fa icon="arrow-right"  style="padding-left: 8px;" />
+            <FontAwesomeIcon icon="arrow-right"  style="padding-left: 8px;" />
         </button>
 
         <button class="btn-no-icon" @click="isClicked($event)">
@@ -16,17 +16,20 @@
         </button>
 
         <button class="btn-icon-only" @click="isClicked($event)">
-        <fa icon="arrow-right" />
+        <FontAwesomeIcon icon="arrow-right" />
         </button>
     </div>
 </div>
 </template>
 
 <script>
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 export default {
     name: "SecondaryButton",
+    components: {
+     FontAwesomeIcon 
+    },
     methods: {
         isClicked: function (e) {
             e.preventDefault()
